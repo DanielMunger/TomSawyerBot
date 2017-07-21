@@ -19,7 +19,7 @@ def fileRead():
         try:
             if line != '\n':
                 contentCheck(line)
-                count+=1
+
             else:
                 pass
         except tweepy.TweepError as error:
@@ -33,7 +33,7 @@ def contentCheck(tweet_content):
         tweet_length = len(tweet_content)
         if tweet_length > 2:
             print(tweet_content)
-            print(count)
+            
     #Need an error catch here else:
 
 fileRead()
