@@ -36,8 +36,7 @@ def contentCheck(tweet_content):
         tweet_length = len(tweet_content)
         if tweet_length > 2:
             tweet_content = tweet_content + "#tomsawyer #bookbytweet"
-            #tweet(tweet_content)
-            print(tweet_content)
+            tweet(tweet_content)            
     else:
         pass
 
