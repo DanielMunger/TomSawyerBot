@@ -22,7 +22,7 @@ def fileRead():
                 # Delay Tweeting with sleep function. One tweet per hour will result in the bot tweeting for ~1 year(354.166.. days).
                 # One tweet per hour(3600s* ~8500lines = 30,600,000s)
                 # 30,600,000s / 84,600s/year = 354.166.. days
-                sleep(2)
+                sleep(3600)
             else:
                 pass
         except tweepy.TweepError as error:
