@@ -35,8 +35,10 @@ def contentCheck(tweet_content):
     if tweet_content:
         tweet_length = len(tweet_content)
         if tweet_length > 2:
+            tweet_content = "'"+tweet_content+"'"+"          #tomsawyer #bookbytweet"
             print(tweet_content)
-
+            print(len(tweet_content))
     #Need an error catch here else:
 
+#Main
 fileRead()
